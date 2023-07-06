@@ -1,1 +1,35 @@
-만들긴 했는데.....
+1. d드라이브에서 love_it_git 이라는 폴더 생성 후 init 명령어로 git로컬 저장소로 만듬
+
+	mkdir love_it_git  -> love_it_git 폴더 생성
+	cd love_it_git  -> love_it_git 폴더로 이동
+	git init  -> git로컬 저장소로 만듬
+	git status  -> 상태확인으로 커밋에 아무것도 없다는 걸 확인할 수 있음
+
+2. index.md 파일을 노트패드로 생성 후 add로 트랙, 스테이지로 넘김
+
+	notepad index.md  -> 노트패드 index.md 파일 생성
+	git daa index.md  -> index.md 파일을 트랙, 스테이지로 넘김
+	git status  -> 상태확인으로 new file에 index.md파일이 생긴 걸 확인할 수 있음
+
+3. 스테이지에 파일을 “index.md파일생성” 이라는 메시지를 남겨서 커밋함
+
+	git commit -m "index.md파일생성"  -> m(메시지)를 "index.md파일생성"으로 남겨서 커밋
+	git status  -> 상태확인으로 워킹디렉토리에 없는걸 확인할 수 있음
+
+4. 노트패드로 “index.md”파일에 들어가서 “Hello Git!!” 이라는 내용 수정 후 저장
+
+	notepad index.md  -> 노트패드로 index.md 파일 수정
+	git log  -> 기록 이력 확인
+	git diff  -> 수정된 내용을 +,-로 확인 가능
+
+5. 모디파이드 상태 확인
+
+	git status  -> 상태확인으로 index.md파일이 modified 상태인 걸 확인할 수 있음
+
+6. 메시지를 “index.md파일수정”으로 수정해서 커밋 후 git저장소 기록
+
+	git commit -am "index.md 파일수정"  -> m(메시지)수정하면서 a(add)스테이지 상태로 넘김
+
+7. 마지막 기록 이력 확인
+
+	git log  -> 기록 이력 확인, “index.md파일생성” 에서 "index.md 파일수정" 수정 일시 확인 가능
