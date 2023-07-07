@@ -78,3 +78,12 @@
 
 
 < ================ 13:21 ================= >
+
+
+
+
+
+R5 -> NTP 서버로부터 시간 동기화 완료
+
+(config)# ip domain lookup
+(config)# ip domain lookup
